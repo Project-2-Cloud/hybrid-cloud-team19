@@ -1,18 +1,24 @@
 <template>
   <div id="app">
+    
     <NavHeader />
     <caroussel />
     <router-view/>
+    <iconbox/>
+
+    
   </div>
 </template>
 	
 <script>
 import caroussel from "@/caroussel.vue"
 import NavHeader from "@/NavHeader.vue"
+import iconbox from "@/iconbox.vue"
 export default {
   components: {
     NavHeader,
-    caroussel
+    caroussel,
+    iconbox
   },
   mounted(){
     this.$store.commit("setUrls");

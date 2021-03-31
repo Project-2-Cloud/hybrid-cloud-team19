@@ -9,12 +9,12 @@
       <!--<h6 class="card-subtitle mb-2 remain">{{ item.quantity }} left in stock</h6>-->
       <p class="card-text">{{ item.description | shortDescription }}</p>
       <div class="row d-flex justify-content-center">
-        <p class="col-6">${{ item.price }}</p>
+        <p class="col-6 text-danger">{{ item.price }} <strong class="text-dark">€</strong></p>
         <p class="col-7">
-          <button type="button" class="btn btn-success" :disabled="item.quantity === 0" @click="addToCart(item)">
+          <button type="button" class="btn btn-success btn-lg" :disabled="item.quantity === 0" @click="addToCart(item)">
             Buy now
           </button>
-          <button type="button" class="btn btn-transparent">
+          <button type="button" class="btn btn-transparent btn-sml" @click="viewMoreFirst()">
             Tell me more
           </button>
         </p>
@@ -45,7 +45,10 @@ export default {
     },
     methods: {
         addToCart(item) {
-            this.$store.commit('addToCart',item)
+            this.$store.commit('addToCart',item);
+        },
+        viewMoreFirst(){
+          window.location.href = "famillypack"
         }
     }
 }

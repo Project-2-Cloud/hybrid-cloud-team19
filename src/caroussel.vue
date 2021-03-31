@@ -24,5 +24,9 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
       </a>
+      <div class="">
+          <p></p>
+          <h2>Do more and spend less. You'll wonder how you ever lived without it...</h2>
+      </div>
   </div>
 </template>
