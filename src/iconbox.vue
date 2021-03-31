@@ -6,7 +6,7 @@
 				<div class="box">							
 					<div class="icon">
 						<div class="image">
-							<i class="fa fa-briefcase"></i>
+							<i class="fa fa-briefcase fa-lg"></i>
 							</div>
 						<div class="info">
 							<h3 class="title">Over 1000 business already signed for 2022</h3>
