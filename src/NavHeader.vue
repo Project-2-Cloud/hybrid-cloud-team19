@@ -1,6 +1,9 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" role="navigation">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" role="navigation">
     <div class="container">
+      <a href="#" class="navbar-brand">
+            <img src="https://images.vexels.com/media/users/3/141859/isolated/preview/467be293e99ed9ef56014a02f4be2308-discount-red-rounded-by-vexels.png" height="100" alt="Dr Discount">
+    </a>
       <router-link to="/" class="navbar-brand mr-auto">Dr. Discount</router-link>
       <ul class="navbar-nav mr-auto">
       </ul>

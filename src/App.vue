@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <NavHeader />
+    <caroussel />
     <router-view/>
   </div>
 </template>
 	
 <script>
+import caroussel from "@/caroussel.vue"
 import NavHeader from "@/NavHeader.vue"
 export default {
   components: {
-    NavHeader
+    NavHeader,
+    caroussel
   },
   mounted(){
     this.$store.commit("setUrls");
