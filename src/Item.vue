@@ -11,7 +11,7 @@
       <div class="row d-flex justify-content-center">
         <p class="col-6 text-danger">{{ item.price }} <strong class="text-dark">€</strong></p>
         <p class="col-7">
-          <button type="button" class="btn btn-success btn-lg" :disabled="item.quantity === 0" @click="addToCart(item)">
+          <button type="button" class="btn btn-success btn-lg"  @click="addToCart(item)">
             Buy now
           </button>
           <button type="button" class="btn btn-transparent btn-sml" @click="viewMoreFirst()">
